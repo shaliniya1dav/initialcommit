@@ -1,0 +1,37 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="wholenumber" type="integer" access="public"/>
+        <aura:attribute name="percentage" type="integer" access="public"/>
+    <div>
+    
+<lightning:input type="number"
+                     name="input1"
+                  label="Enter a Number"
+                     value="{!v.wholenumber}">
+    </lightning:input>  
+        <lightning:input type="number"
+                     name="input1"
+               label="Enter a Number"
+                     value="{!v.percentage}">
+    </lightning:input> 
+    
+        {!v.wholenumber}<br/>
+        {!v.wholenumber}<br/>
+        {!v.percentage}<br/>
+        <br/>
+        <br/>
+
+
+       
+        {!div (mult(v.wholenumber,v.percentage),100)}
+        
+        
+        
+    
+    </div>
+    
+    <div>
+        <c:quickContact/>
+    </div>
+    
+    
+</aura:component>
