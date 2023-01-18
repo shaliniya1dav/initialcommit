@@ -1,0 +1,41 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+
+        <aura:attribute  name="wholenumber" type="integer" access="public" />
+        <aura:attribute  name="percentage" type="integer" access="public" />
+    <aura:attribute  name="truthy" type="Boolean" default="True" />
+        
+        <lightning:input  type="integer" required="true" label=" enter the number"
+       value= "{!v.wholenumber}"/>
+        <lightning:input  type="integer" required="true" label=" enter the percent" formatter="percent-fixed" value= "{!v.percentage}"  />
+  
+    {!v.wholenumber} <br/>
+    
+       {!v.percentage} <br/>
+    
+   {!div(mult(v.wholenumber,v.percentage),100)} 
+        
+        <h1 class="red">   I am in component</h1>     
+    <p class="pink"> I am in para</p>
+    <div class="white"> I am in para</div>   
+    
+    <aura:attribute name="whonenum" type="integer"  access="global" default="23"/>
+    <aura:attribute name="Intro" type="String"  access="global" default="You are most Welcome"/>
+    <aura:attribute name="String" type="String[]"  access="global" default="['Lado','Binni','Shivi']"/>
+    <aura:attribute name="Set" type="Set"  access="global" default="['La','Bi','Shi']"/>
+    <aura:attribute name="List" type="List"  access="global" default="['L','B','S']"/>
+    
+    Welcome{!v.Intro} Age:{!v.whonenum} String[]:{!v.String[0]} Set:{!v.Set[0]} List:{!v.List[0]}
+    <lightning:button Value="Components"  Label="Components" onclick="{!c.doclick}"/>
+    <lightning:input aura:id="TestInput" Label="Enter Age"/>
+    
+    <aura:if isTrue="{!v.truthy}">
+    True
+    <aura:set attribute="else">
+      False
+    </aura:set>
+  </aura:if> 
+    
+    <aura:iteration items="{!v.Set}" var="map"/>
+    {!map} <br/>
+      
+</aura:component>

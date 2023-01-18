@@ -1,0 +1,6 @@
+<aura:component >
+    <c.eventfirstcomp/>
+<c.handlerapplicationcomp/>  
+    
+	
+</aura:component>
