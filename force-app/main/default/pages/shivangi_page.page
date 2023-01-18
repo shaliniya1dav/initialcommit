@@ -1,0 +1,23 @@
+<apex:page sidebar="false"  showHeader="false">
+
+    <p>Hi I am shivangi Gupta</p>
+<p>I am learning sales dev.</p>
+    <apex:pageBlock title="first block">
+       <apex:pageBlockSection title="first section">
+        I am from first section.
+        </apex:pageBlockSection>
+    <apex:pageBlockSection title="second section">  
+        I am from second section
+        </apex:pageBlockSection>
+    </apex:pageBlock> 
+    <apex:pageBlock title="second block">
+       <apex:pageBlockSection title="first section">
+        I am from first section.
+        </apex:pageBlockSection>
+    <apex:pageBlockSection title="second section">  
+        I am from second section
+        </apex:pageBlockSection>
+    </apex:pageBlock> 
+    
+    
+</apex:page>

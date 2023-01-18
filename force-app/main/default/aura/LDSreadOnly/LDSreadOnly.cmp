@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="recordId" type="String" />
+    <lightning:recordForm recordId="{!v.recordId}" 
+                          objectApiName="Account"
+                          mode="readonly"
+                          fields="Name" />
+    </aura:component>

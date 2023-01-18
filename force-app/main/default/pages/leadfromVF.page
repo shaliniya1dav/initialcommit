@@ -1,0 +1,31 @@
+<apex:page standardController="Lead">
+    <apex:form >
+        <apex:pageBlock mode="New">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Submit"/>
+            </apex:pageBlockButtons>
+           
+            <apex:pageBlockSection title="Contact Information" columns="1">
+            <apex:pageBlockSection >
+            
+            </apex:pageBlockSection>
+           
+            <apex:pageBlockSection columns="1" >
+            <apex:inputField value="{!Lead.FirstName}" required="true"/>
+            <apex:inputField value="{!Lead.LastName}"/>
+            <apex:inputField value="{!Lead.Email}"/>
+            <apex:inputField value="{!Lead.Phone}" required="true"/>
+            </apex:pageBlockSection>
+           
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="shivangis page" columns="1">
+           
+        
+            
+    
+            <apex:inputField value="{!lead.Name}"/>
+      
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    </apex:page>

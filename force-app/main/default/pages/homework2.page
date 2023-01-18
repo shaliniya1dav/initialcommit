@@ -1,0 +1,37 @@
+<apex:page standardController="account"   sidebar="false"  showHeader="false">
+<apex:form >
+    
+    <apex:pageBlock title="My detail">
+       <apex:pageBlockSection title="personal details" >
+       <p> my name is {!$User.FirstName}</p> 
+           <p>my emial address is {!$User.Email}</p>
+           
+       </apex:pageBlockSection>
+    <apex:pageBlockSection title=" create account" > 
+       
+        <apex:outputLink value="{!URLFOR($Action.Account.New)}" >
+        
+        create new account
+        </apex:outputLink> 
+         
+          
+        
+
+        
+        
+        
+        
+        
+        
+ 
+
+	
+        </apex:pageBlockSection>
+   
+    
+    
+
+    </apex:pageBlock> 
+    
+  </apex:form>  
+</apex:page>

@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+<aura:attribute name="whom" type="String" default="myname" access="public"/>
+<aura:attribute name="Age" type="Integer" access="public"/>  
+<aura:attribute name="Colour" type="String[]" default="{'Red','Blue','Yellow'}" access="public"/>
+    <aura:attribute name="ColourList" type="List" default="{'Red','Blue','Yellow'}" access="public"/>
+       <aura:attribute name="ColourSet" type="List" default="{'Red','Blue','Yellow'}" access="public"/>
+       <aura:attribute name="ContactObj" type="Contact" access="public"/>
+    
+    {!v.whom},Age:{!v.Age},{!v.Colour[0]},{!v.ColourList[1]},{!v.ColourSet[2]}
+    <Lightning:input aura:id="testclass" label="This is class"/>
+    <Lightning:button value="click here" label="click here" onclick="{!c.doClick}"/>
+    
+    
+    
+    
+    
+    
+</aura:component>

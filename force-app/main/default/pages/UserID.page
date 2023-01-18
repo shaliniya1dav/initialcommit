@@ -1,0 +1,4 @@
+<apex:page >
+  <p>ProfileId: {!$User.ProfileId}</p>
+    
+</apex:page>

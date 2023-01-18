@@ -1,0 +1,10 @@
+<apex:page controller="sample" sidebar="false" >
+<apex:form >
+    <apex:pageblock >
+        <apex:pageblockTable value="{!code}" var="c">
+            <apex:column value="{!c.first_name__c}"/>        
+            <apex:column value="{!c.Owner_name__c}"/>
+        </apex:pageblockTable>
+    </apex:pageblock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page >
+    
+<apex:outputText value="{!$Label.first}">
+    </apex:outputText>>
+</apex:page>

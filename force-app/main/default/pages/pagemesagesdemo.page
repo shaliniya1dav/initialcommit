@@ -1,0 +1,11 @@
+<apex:page controller="pagemesages" renderAs="pdf" >
+    <apex:form >
+   <apex:pageMessage severity="Error" summary="First Error message on page" strength="1"></apex:pageMessage>
+    <apex:pageMessage severity="Error" detail="Second Error message on page" strength="2"></apex:pageMessage>
+  
+    
+<apex:commandButton action="{!pagemesages}" value="Add string Message"/>
+    
+
+ </apex:form>
+</apex:page>

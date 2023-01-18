@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="apexcalllight" >
+    <aura:handler name="Init" value="{!this}" action="{!c.doinit}" />
+    
+    <aura:attribute name="ContactList" type="Contact[]" />
+    <aura:iteration Items="{!v.ContactList}" var="var" >
+    
+    {!v.Lastname}
+    
+    {!v.Email}
+    </aura:iteration>
+    
+   
+                   
+  </aura:component>

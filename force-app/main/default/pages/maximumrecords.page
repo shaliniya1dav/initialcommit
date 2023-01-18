@@ -1,0 +1,13 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+   
+    
+  <b>
+    
+   helo your accounts:{!account.Name} 
+    </b>
+    
+    
+   
+    
+    
+</apex:page>

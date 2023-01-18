@@ -1,0 +1,15 @@
+<apex:page controller="rendercontroller" >
+    <apex:form >
+<apex:pageBlock >
+  <apex:commandButton action="{!method5}" value="show the value"/>  
+   </apex:pageBlock> 
+    
+ <apex:pageBlock rendered="{!renderFlag}">
+   Account name
+     <apex:outputField value="{!acc.name}"/>
+     Account ID
+     <apex:outputField value="{!acc.Id}"/>
+    
+</apex:pageBlock> 
+        </apex:form>
+</apex:page>

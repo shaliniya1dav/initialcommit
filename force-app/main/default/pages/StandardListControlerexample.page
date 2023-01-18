@@ -1,0 +1,27 @@
+<apex:page standardcontroller="account" recordSetVar="harshad" >
+<apex:form >
+
+ <apex:pageBlock title="All Accounts">
+     
+ <apex:pageBlockTable value="{!harshad}" var="h">
+   <apex:column >
+     <apex:commandLink value="detail"/>
+       <apex:param value="{!h.ID}" name="x"/>
+        <apex:param value="{!h.Name}" name="y"/>
+     
+     </apex:column>  
+     
+     
+ <apex:column value="{!h.name}"/>
+ <apex:column value="{!h.industry}"/>
+    
+
+   <apex:column value="{!h.Active__c}"/>    
+     <apex:inlineEditSupport />
+    
+ </apex:pageBlockTable>
+      
+     <apex:commandButton action="{!save}" value="click to save"/>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

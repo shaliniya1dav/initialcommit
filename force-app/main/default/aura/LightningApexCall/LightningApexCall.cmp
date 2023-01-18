@@ -1,0 +1,14 @@
+<aura:component controller="contacts" >
+    
+    <aura:attribute name="ContactList" type="Contact[]"/>
+    
+    <aura:iteration items="{!v.ContactList}" var="item">
+    
+    
+        {!item.Email} <br/>
+        {!item.Phone} <br/>
+        {!item.Id} <br/>
+    
+    
+ </aura:iteration>   
+</aura:component>

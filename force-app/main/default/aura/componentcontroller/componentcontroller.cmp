@@ -1,0 +1,14 @@
+<aura:component controller='apexcalllight' implements="force:hasRecordId,force:hassobjectName,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes">
+ 
+    
+	<aura:iteration  items="{!v.listm}" var="con">
+    
+        {!con.name}<br/>
+   
+    </aura:iteration>
+    <div>
+        <c:quickContact  accountId="{!v.recordId}"/>
+    
+    </div>
+    
+</aura:component>

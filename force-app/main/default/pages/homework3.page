@@ -1,0 +1,9 @@
+<apex:page standardController="Lead"   >
+<apex:pageBlock title="My detail">
+    
+  <apex:outputLink value="{($Action.Lead.FindDup)}">
+       duplicatelead
+       </apex:outputLink> 
+         
+   </apex:pageBlock>
+</apex:page>

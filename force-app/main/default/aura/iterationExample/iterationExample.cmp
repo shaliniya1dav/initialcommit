@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+
+    
+    <aura:attribute name="Set" type="Set"  access="global" default="['La','Bi','Shi']"/>
+    
+    <aura:iteration items="{!v.Set}" var="map">
+    {!map} <br/>
+    </aura:iteration>
+</aura:component>

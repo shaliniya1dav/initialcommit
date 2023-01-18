@@ -1,0 +1,4 @@
+<!--c:aeEvent-->
+<aura:event type="APPLICATION">
+    <aura:attribute name="anyvalue" type="String"/>
+</aura:event>

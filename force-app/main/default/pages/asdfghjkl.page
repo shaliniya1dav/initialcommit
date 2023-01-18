@@ -1,0 +1,10 @@
+<apex:page controller="hierarchy">
+    <apex:form >
+  
+            <apex:outputText value="{!$Setup.Account__c.email__c }"/>        
+    
+
+       
+      
+     </apex:form>
+ </apex:page>

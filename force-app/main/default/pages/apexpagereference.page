@@ -1,0 +1,8 @@
+<apex:page controller="Mycontroller">
+    
+    <apex:pageBlock title="My page"/>
+ name is: {!Account.name}
+    
+    
+  
+</apex:page>

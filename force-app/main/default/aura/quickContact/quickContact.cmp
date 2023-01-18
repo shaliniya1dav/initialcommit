@@ -1,0 +1,14 @@
+<aura:component controller='apexcalllight' implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+
+    <aura:attribute name='accountId' type='string'/>
+    <aura:attribute name='createcontact' type='Contact' default="{sobjectName:'Contact',Firstname:'',Lastname:'',Email:'',Phone:''}" />
+ <div>
+     <lightning:input type='text' value="{!v.createcontact.Firstname}"  label="FirstName"  required="true" />
+    <lightning:input type='text' value="{!v.createcontact.Lastname}"  label="LastName"  required="true" />
+    <lightning:input type='Email' value="{!v.createcontact.Email}"  label="Email"  required="true" />
+    <lightning:input type='Phone' value="{!v.createcontact.Phone}"  label="Phone"  required="true" />
+  
+</div>   
+    <Lightning:button label="Create contact" variant='brand'  onclick='{!c.dosave}' /> 
+    
+</aura:component>

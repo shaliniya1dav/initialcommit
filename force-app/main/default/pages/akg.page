@@ -1,0 +1,10 @@
+<apex:page Controller="navigationonepagetoother">
+    {!$Profile.Id}
+{!$Profile.Name}
+    <apex:form id="theForm">
+        
+    <apex:commandButton action="{!page2}" value="linked page"/>
+      <apex:commandButton action="{!page1}" value="linked 2nd page"/>
+        
+        </apex:form>
+</apex:page>

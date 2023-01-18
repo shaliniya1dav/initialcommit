@@ -1,0 +1,9 @@
+<aura:component >
+    
+    <aura:registerEvent name="handlercmp" type="c:eventfirst"/>
+    <h1>  application event handling</h1>
+<lightning:button label="fire event value from here"
+                  onclick="{!c.callingapplicationevent}"  />
+
+	
+</aura:component>

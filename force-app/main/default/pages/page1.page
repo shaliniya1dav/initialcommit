@@ -1,0 +1,11 @@
+<apex:page controller="passingvalueinVF">
+    <apex:form >
+  <apex:pageBlock title="Welcome to page 1">
+      <apex:inputText value="{!date1}"/>
+       <apex:inputText value="{!date2}"/>
+   <apex:commandButton action="{!Display}" value="Shoe another page"/>
+    
+    </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>
