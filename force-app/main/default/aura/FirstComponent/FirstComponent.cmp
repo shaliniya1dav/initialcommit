@@ -2,6 +2,7 @@
 
         <aura:attribute  name="wholenumber" type="integer" access="public" />
         <aura:attribute  name="percentage" type="integer" access="public" />
+        <aura:attribute  name="multiply" type="integer" access="public" />
     <aura:attribute  name="truthy" type="Boolean" default="True" />
         
         <lightning:input  type="integer" required="true" label=" enter the number"
