@@ -2,10 +2,10 @@ global  class batchableaccount implements Database.Batchable<sObject>{
 
 
 global final string Query;
-global final string Entity;
+global final string Entity;     
 global final string Field;
 global final string Value;
-
+//sdfghjkl//
 
 global batchableaccount(string q,string e,string f,string v){
 
